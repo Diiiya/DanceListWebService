@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanceWebServiceListAndTesting", "DanceWebServiceListAndTesting\DanceWebServiceListAndTesting.csproj", "{14381BAB-F8C4-4EBD-B4E2-01D31F5BC297}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanceUnitTestProject", "DanceUnitTestProject\DanceUnitTestProject.csproj", "{F7AC80D9-D328-431D-9CE7-794F5EA423CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{14381BAB-F8C4-4EBD-B4E2-01D31F5BC297}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14381BAB-F8C4-4EBD-B4E2-01D31F5BC297}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14381BAB-F8C4-4EBD-B4E2-01D31F5BC297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7AC80D9-D328-431D-9CE7-794F5EA423CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7AC80D9-D328-431D-9CE7-794F5EA423CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7AC80D9-D328-431D-9CE7-794F5EA423CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7AC80D9-D328-431D-9CE7-794F5EA423CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
