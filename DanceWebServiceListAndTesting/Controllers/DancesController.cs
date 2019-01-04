@@ -26,9 +26,9 @@ namespace DanceWebServiceListAndTesting.Controllers
         private static void Initialize()
         {
             _dances = new List<Dance>();
-            Dance d1 = new Dance { Id = 1, Name = "Salsa", Description = "A popular socian dance which origins can be found in the Cuban folk dances.", Photo = "", Country = "Cuba", TimeAppeared = 1800, Type = "Latino", AddedDate = new DateTime() };
-            Dance d2 = new Dance { Id = 2, Name = "Bachata", Description = "Slow social dance coming from the Dominican Republic.", Photo = "", Country = "Dominican Republic", TimeAppeared = 1960, Type = "Latino", AddedDate = new DateTime() };
-            Dance d3 = new Dance { Id = 3, Name = "Lindy Hop", Description = "Lindy hop is another social dance. It's a mix of many dances such as jazz, tap, Charleston.", Photo = "", Country = "New York City", TimeAppeared = 1928, Type = "Swing", AddedDate = new DateTime() };
+            Dance d1 = new Dance { Id = 1, DName = "Salsa", DDescription = "A popular socian dance which origins can be found in the Cuban folk dances.", Photo = "", Country = "Cuba", TimeAppeared = 1800, DType = "Latino", AddedDate = new DateTime() };
+            Dance d2 = new Dance { Id = 2, DName = "Bachata", DDescription = "Slow social dance coming from the Dominican Republic.", Photo = "", Country = "Dominican Republic", TimeAppeared = 1960, DType = "Latino", AddedDate = new DateTime() };
+            Dance d3 = new Dance { Id = 3, DName = "Lindy Hop", DDescription = "Lindy hop is another social dance. It's a mix of many dances such as jazz, tap, Charleston.", Photo = "", Country = "New York City", TimeAppeared = 1928, DType = "Swing", AddedDate = new DateTime() };
             _dances.Add(d1);
             _dances.Add(d2);
             _dances.Add(d3);
@@ -66,12 +66,12 @@ namespace DanceWebServiceListAndTesting.Controllers
         {
             Dance dance = _dances.FirstOrDefault(student => student.Id == id);
             if (dance == null) return null;
-            dance.Name = value.Name;
-            dance.Description = value.Description;
+            dance.DName = value.DName;
+            dance.DDescription = value.DDescription;
             dance.Photo = value.Photo;
             dance.Country = value.Country;
             dance.TimeAppeared = value.TimeAppeared;
-            dance.Type = value.Type;
+            dance.DType = value.DType;
             dance.AddedDate = value.AddedDate;
             return dance;
 

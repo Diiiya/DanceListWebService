@@ -26,7 +26,7 @@ namespace DanceUnitTestProject
             Assert.AreEqual(3, dances.Count());
 
             Dance dance = _controller.Get(1);
-            Assert.AreEqual("Salsa", dance.Name);
+            Assert.AreEqual("Salsa", dance.DName);
 
             dance = _controller.Get(100);
             Assert.IsNull(dance);
@@ -51,12 +51,12 @@ namespace DanceUnitTestProject
         {
             Dance newDance = new Dance
             {
-                Name = "Samba",
-                Description = "...",
+                DName = "Samba",
+                DDescription = "...",
                 Photo = "",
                 Country = "Unknown",
                 TimeAppeared = 1800,
-                Type = "Latino",
+                DType = "Latino",
                 AddedDate = new System.DateTime()
             };
             Dance newD = _controller.Post(newDance);
@@ -68,18 +68,18 @@ namespace DanceUnitTestProject
         {
             Dance newDance = new Dance
             {
-                Name = "Rumba",
-                Description = "...",
+                DName = "Rumba",
+                DDescription = "...",
                 Photo = "",
                 Country = "Unknown",
                 TimeAppeared = 1800,
-                Type = "Latino",
+                DType = "Latino",
                 AddedDate = new System.DateTime()
             };
             Dance d = _controller.Put(3, newDance);
-            Assert.AreEqual("Rumba", d.Name);
+            Assert.AreEqual("Rumba", d.DName);
             Dance d2 = _controller.Get(3);
-            Assert.AreEqual("Rumba", d2.Name);
+            Assert.AreEqual("Rumba", d2.DName);
         }
     }
 
